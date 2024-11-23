@@ -1,5 +1,9 @@
 import requests
+from main import remove_stopwords
 
+
+sentence = input("Enter a sentence: ")
+tokens = remove_stopwords(sentence)
 # Define the API URL
 API_URL = "http://hackapi.rhosigma.tech/api/completion"
 
@@ -39,8 +43,8 @@ def get_completion(system_prompt, user_prompt):
 # Example usage
 if __name__ == "__main__":
     # Define system and user prompts
-    system_prompt = "You are a teacher that is teaching young children around 10 year olds, you need to explain to them anything they ask in simple terms and prefer using analogies."
-    user_prompt = "Explain blockchain to me."
+    system_prompt = "Identify the context of each word in the list and append it as word_context."
+    user_prompt = str(tokens)
     
     # Get the completion
     response = get_completion(system_prompt, user_prompt)
@@ -48,4 +52,4 @@ if __name__ == "__main__":
     # Print the response
     if response:
         print("API Response:")
-        print(response['response'])
+        print(response)
