@@ -11,7 +11,11 @@ auctions = [
 # Route to display the auction homepage
 @app.route('/')
 def index():
-    return render_template('homepage.html', auctions=auctions)
+    return render_template('index.html', auctions=auctions)
+
+@app.route("/homepage")
+def homepage():
+    return render_template("homepage.html")
 
 # Route to handle bid submissions
 @app.route('/place_bid', methods=['POST'])
