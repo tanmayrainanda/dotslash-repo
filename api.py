@@ -3,7 +3,8 @@ from main import remove_stopwords
 
 
 # sentence = input("Enter a sentence: ")
-tokens = remove_stopwords("deposited loan in bank for my car purchase through online banking in chandigarh branch")
+tokens = remove_stopwords("deposited loan in bank for my car purchase through online banking in chandigarh branch near the river bank")
+# sentence = "deposited loan in bank for my car purchase through online banking in chandigarh branch near the river bank"
 # Define the API URL
 API_URL = "http://hackapi.rhosigma.tech/api/completion"
 
@@ -42,7 +43,7 @@ def get_completion(system_prompt, user_prompt):
 # Example usage
 if __name__ == "__main__":
     # Define system and user prompts
-    system_prompt = '''classify each word into science, geography, general(filler words/verbs), location(city/country), technology, place(banks/shops/restaurants) output format: word_category], strictly follow rules'''
+    system_prompt = 'take the word after and before each word to determine the context and map it to a general category that the word belongs to, output format: word_category'
 
     user_prompt = str(tokens)
     
@@ -52,4 +53,4 @@ if __name__ == "__main__":
     # Print the response
     if response:
         print("API Response:")
-        print(response)
+        print(response['response'])
