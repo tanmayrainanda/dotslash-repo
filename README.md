@@ -1,4 +1,4 @@
-PROJECT NAME: Reportalyzer 
+## PROJECT NAME: Reportalyzer 
 Project Overview
 The Reportalyzer is a software solution designed to streamline the interpretation, extraction and organization of data from medical reports. It leverages advanced technologies such as natural language processing (NLP), machine learning (ML), and artificial intelligence (AI) to provide healthcare professionals with accurate, efficient and actionable insights.
 Features:
