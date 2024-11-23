@@ -2,8 +2,8 @@ import requests
 from main import remove_stopwords
 
 
-sentence = input("Enter a sentence: ")
-tokens = remove_stopwords(sentence)
+# sentence = input("Enter a sentence: ")
+tokens = remove_stopwords("deposited loan in bank for my car purchase through online banking in chandigarh branch")
 # Define the API URL
 API_URL = "http://hackapi.rhosigma.tech/api/completion"
 
@@ -18,7 +18,6 @@ def get_completion(system_prompt, user_prompt):
         "Content-Type": "application/json"  # Set the content type to JSON
     }
     
-    # Define the body
     body = {
         "system": system_prompt,
         "user": user_prompt,
@@ -43,7 +42,8 @@ def get_completion(system_prompt, user_prompt):
 # Example usage
 if __name__ == "__main__":
     # Define system and user prompts
-    system_prompt = "Identify the context of each word in the list and append it as word_context."
+    system_prompt = '''classify each word into science, geography, general(filler words/verbs), location(city/country), technology, place(banks/shops/restaurants) output format: word_category], strictly follow rules'''
+
     user_prompt = str(tokens)
     
     # Get the completion
