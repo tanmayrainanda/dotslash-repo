@@ -17,6 +17,7 @@ def index():
 def homepage():
     return render_template("homepage.html", auctions=auctions)
 
+
 # Route to handle bid submissions
 @app.route('/place_bid', methods=['POST'])
 def place_bid():
