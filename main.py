@@ -8,10 +8,10 @@ auctions = [
     {"id": 2, "item": "Projector", "starting_price": 200},
 ]
 
-# Route to display the auction page
+# Route to display the auction homepage
 @app.route('/')
 def index():
-    return render_template('index.html', auctions=auctions)
+    return render_template('homepage.html', auctions=auctions)
 
 # Route to handle bid submissions
 @app.route('/place_bid', methods=['POST'])
@@ -25,7 +25,8 @@ def place_bid():
             auction['current_bid'] = bid_amount
             break
 
-    return render_template('index.html', auctions=auctions, message="Bid placed successfully!")
+    return render_template('homepage.html', auctions=auctions, message="Bid placed successfully!")
+    
 
 if __name__ == "__main__":
     app.run(debug=True)
