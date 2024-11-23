@@ -9,6 +9,7 @@ auctions = [
     {"id": 2, "item": "Projector", "starting_price": 200},
 ]
 
+
 con = sqlite3.connect('auc_datas.db')
 cur = con.cursor()
 
