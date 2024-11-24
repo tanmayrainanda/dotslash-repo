@@ -97,3 +97,4 @@ https://www.sqlite.org/lang.html
 https://www.digitalocean.com/community/tutorials/how-to-use-the-sqlite3-module-in-python-3
 
 https://medium.com/@ccpythonprogramming/integrating-sqlite-with-python-getting-started-1f5b688b7ab1
+
