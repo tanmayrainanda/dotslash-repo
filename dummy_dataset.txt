@@ -1,0 +1,62 @@
+categories = {
+    "finance_and_banking": [
+        "account", "loan", "credit", "interest", "mortgage"
+    ],
+    "legal": [
+        "court", "lawyer", "contract", "evidence", "trial"
+    ],
+    "numbers": [
+        "one", "hundred", "thousand", "million", "zero"
+    ],
+    "states_and_cities": [
+        "California", "Texas", "New York", "Mumbai", "Sydney"
+    ],
+    "technical": [
+        "algorithm", "circuit", "data", "program", "code"
+    ],
+    "action": [
+        "run", "jump", "write", "speak", "read"
+    ],
+    "emotion": [
+        "joy", "sadness", "anger", "fear", "surprise"
+    ],
+    "time": [
+        "second", "minute", "hour", "day", "year"
+    ],
+    "people": [
+        "teacher", "doctor", "engineer", "child", "parent"
+    ],
+    "places": [
+        "school", "market", "hospital", "park", "beach"
+    ],
+    "objects": [
+        "chair", "table", "pen", "book", "bottle"
+    ],
+    "food": [
+        "pizza", "apple", "bread", "chicken", "rice"
+    ],
+    "nature": [
+        "tree", "mountain", "river", "flower", "cloud"
+    ],
+    "transportation": [
+        "car", "bus", "train", "airplane", "bicycle"
+    ],
+    "household": [
+        "sofa", "lamp", "bed", "mirror", "clock"
+    ],
+    "event": [
+        "wedding", "meeting", "birthday", "concert", "festival"
+    ],
+    "navigation": [
+        "map", "compass", "GPS", "landmark", "route"
+    ],
+    "sound": [
+        "music", "noise", "echo", "ring", "whisper"
+    ],
+    "animals": [
+        "dog", "cat", "elephant", "lion", "bird"
+    ],
+    "general": [
+        "thing", "idea", "concept", "problem", "solution"
+    ]
+}
