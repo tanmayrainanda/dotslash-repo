@@ -40,6 +40,7 @@ def place_bid():
     cur = con.cursor()
     if auctions[item_id - 1]['item'] not in names:
         cur.execute(f"INSERT INTO auctionItems Values('{item_id - 1}','{auctions[item_id - 1]['item']}', '{bid_amount}')")
+        names.append(auctions[item_id - 1]['item'])
     else:
         cur.execute(f"UPDATE auctionItems SET bid = '{bid_amount}' WHERE id = '{item_id - 1}'")
     con.commit()
